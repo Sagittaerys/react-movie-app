@@ -1,0 +1,126 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: black;
+  color: ivory;
+}
+
+.movie-image{
+  width: 304px;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.movie-image:hover{
+  transform: scale(1.1);
+}
+
+.content{
+  text-align: center;
+}
+
+.btn-grid{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-card{
+  padding: 20px 20px;
+}
+
+.play-btn{
+  background-color: crimson;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  border: none;
+}
+
+.details{
+  font-size: 14px;
+}
+
+.play-btn:hover{
+  background-color: ivory;
+  color: crimson;
+}
+
+.sage-card{
+  overflow: hidden;
+  box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 110vh;
+}
+
+.sage-card:hover{
+    border: 2px solid crimson ;
+    padding: 10px 9px;
+    border-radius: 12px;
+    transition: scale(1.05);
+}
+
+.all-movies{
+  display: flex;
+  padding-top: 50px;
+  
+}
+
+.main-nav{
+  position: fixed;
+  /* background-color: black; */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: black !important;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.nav-brand{
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 35px;
+  color: crimson;
+  margin-left: 25px ;
+}
+
+.nav-bar{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  
+}
+
+.links{
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.links:hover{
+  color: crimson;
+}
+
+.nav-links{
+  display: flex;
+  margin-left: 60px;
+}
+
+.search{
+  padding: 5px 30px;
+  /* align-items: center; */
+  margin-left: 50px;
+}
+
+.search-icon{
+  font-size: 24px;
+  /* margin-top: 2px; */
+}
+
+.text{
+  padding: 9px 10px;
+}
