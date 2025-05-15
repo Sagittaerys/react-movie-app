@@ -1,5 +1,8 @@
 import MovieCard from "./movie-card";
 import movies from "./movies";
+import RaceTo from "./race-to";
+import { Link } from 'react-router'
+
 
 export default function MovieList(){
   return(
@@ -8,11 +11,15 @@ export default function MovieList(){
 
 
                 {movies.map((movie, index) => (
+                  <Link to={`/movie/${movie.id}`} key={movie.id}>
                   <MovieCard key={index} {...movie} />
+                  </Link>
                 ))
                 } 
 
-                
+               
+
+               
      </div>
   );
 }

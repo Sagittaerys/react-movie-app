@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaSearch } from "react-icons/fa";
 import Filter from './filter';
+import { Link } from 'react-router';
 
 
 
@@ -16,7 +17,9 @@ export default function Header(){
   <div>
     <Navbar expand="lg" className="main-nav bg-body-tertiary">
       <Container fluid className='nav-bar'>
+        <Link to={"/"}>
         <Navbar.Brand className='nav-brand' href="#home"> SAGEFLIX </Navbar.Brand>
+        </Link>
 
         <Navbar.Collapse id="basic-navbar-nav" className='nav-links'>
 

@@ -5,8 +5,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router";
 import RaceTo from "./race-to";
 
-
-export default function App(){
+export default function Home(){
 
  
 
@@ -14,12 +13,12 @@ export default function App(){
   return(
 
     <div>
-      
-      <Header />
-        <Routes>
-        <Route path="/" element={<MovieList />} />
-        <Route path="/movie/:id" element={<RaceTo />} />
-      </Routes>
+        <Header />
+        
+        
+
+        <MovieList />
+       
     </div>
   )
 }
